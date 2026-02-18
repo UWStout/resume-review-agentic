@@ -109,6 +109,9 @@ from the [Qwen 2.5 Instruct LLM](https://en.wikipedia.org/wiki/Qwen) and the
 [Qwen 3 Embedding Model](https://ollama.com/library/qwen3-embedding). No content from your resume
 was uploaded to the cloud or provided to a third party in any way.
 
+You can view the full source code of the system that generated this document and manages the local
+LLM setup on (GitHub)[https://github.com/UWStout/resume-review-agentic].
+
 ## How to Interpret the Results
 MOST employers are using tools that try to scan your resume and extract useful information. They
 use this information to filter down to only the most relevant applications. Those that do not
