@@ -1,0 +1,7 @@
+langchain_env
+input/*
+output/*
+!input/.git_keep
+!output/.git_keep
+.env
+__pycache__

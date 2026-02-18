@@ -1,0 +1,16 @@
+services:
+  unstructured-api:
+    # Use the official image from downloads.unstructured.io or quay.io
+    image: downloads.unstructured.io/unstructured-io/unstructured-api:latest
+    # Or use quay.io/unstructured-io/unstructured-api:latest
+    container_name: unstructured-api
+    # Maps port 5000 on your local machine to port 8000 in the container
+    ports:
+      - "5000:8000"
+    command: ["--port", "8000", "--host", "0.0.0.0"]
+    # Optional: Set environment variables like API key if you have one,
+    # but for a local container it usually runs without authentication by default
+    environment:
+      - UNSTRUCTURED_API_KEY=${UNSTRUCTURED_API_KEY}
+      - OMP_NUM_THREADS=8
+    restart: unless-stopped
