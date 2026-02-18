@@ -11,6 +11,7 @@ from utils.keyword_searcher import analyze_keyword_counts, count_keywords
 
 # Will process all PDFs in this folder (can be relative path)
 INPUT_FOLDER = "./input"
+OUTPUT_FOLDER = "./output"
 
 def process_resume(resume_name, resume_rules_tool, input_folder, output_folder):
     # Extract base filename as id
@@ -174,7 +175,7 @@ def main():
 
     # Process each resume
     for resume_name in [item.name for item in file_list]:
-        process_resume(resume_name, resume_rules_tool, INPUT_FOLDER, "output/")
+        process_resume(resume_name, resume_rules_tool, INPUT_FOLDER, OUTPUT_FOLDER)
 
 # Was this script run directly
 if __name__ == "__main__":
