@@ -1,7 +1,28 @@
+# The Virtual environment (you can regenerate this with the bootstrap_env scripts)
 langchain_env
+
+# Input and output data folders
 input/*
 output/*
+
+# Make sure the folders are part of the repo (empty ones are ignored)
 !input/.git_keep
 !output/.git_keep
+
+# Secrets (like API keys)
 .env
+
+# Python pre-compiled cache files
 __pycache__
+
+# OS Specific files
+.DS_Store
+
+# Student data we should not send to a repository
+pdf_data
+data.json
+pageData.json
+
+# Extra files not related to the agent
+rotten_data
+rotten_splitter.py
